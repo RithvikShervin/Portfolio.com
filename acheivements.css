@@ -1,0 +1,139 @@
+    * 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body 
+{
+    background: #000000;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo
+{
+    color: #359381;
+    font-size: 4.5rem;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transform: translateX(600px) translateY(-20px);
+}
+
+.navigation 
+{
+   transform: translateY(3rem)
+              translateX(2rem);
+}
+
+.navigation a 
+{
+    font-size: 2rem;
+    color: #359381;
+    z-index: 100;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigation a:hover, .navigation a.active
+{
+    background-color: #359381;
+    color: #fff;
+}
+
+.parallax 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text 
+{
+    position: absolute;
+    font-size: 5rem;
+    color: #3d3737;
+    text-shadow: 2px 2px 2px 4px rgba(0, 0, 0, .2);
+    
+}
+
+.parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: 100%;
+}
+
+.sec 
+{
+    position: relative;
+    background-color: #003329;
+    padding: 100px;
+}
+
+.sec h2 
+{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300; 
+}
+
+.section 
+{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 2rem;
+}
+
+.centerise
+{
+    margin-left: 33%;
+    font-size: 3rem;
+}
+
+.hidden 
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show 
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
